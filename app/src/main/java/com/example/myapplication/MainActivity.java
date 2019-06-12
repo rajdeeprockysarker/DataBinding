@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity implements Onclickinterfacef
         activityMainBinding.setMainactivity(this);
 
 
+        TwoWay mTwoWay=new TwoWay("TestTwoway");
+        activityMainBinding.setTwoway(mTwoWay);
+
+
+
     }
 
     @Override

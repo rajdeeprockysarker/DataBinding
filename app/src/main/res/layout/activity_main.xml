@@ -23,6 +23,9 @@
         <variable
             name="mainactivity"
             type="com.example.myapplication.MainActivity" />
+        <variable
+            name="twoway"
+            type="com.example.myapplication.TwoWay" />
 
     </data>
 
@@ -110,6 +113,25 @@
         android:layout_height="wrap_content"
         android:afterTextChanged="@{(edtitable)->mainactivity.afterUserNameChange(edtitable)}"
         />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="35dp"/>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@{twoway.name}"
+    />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@={twoway.name}"
+        />
+
+
 
 </LinearLayout>
 </layout>
