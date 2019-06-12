@@ -96,5 +96,20 @@
         app:imageResource="@{ModelClassObj.imageURL}"
         />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_simple_set"
+        android:textColor="@android:color/holo_blue_bright"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:afterTextChanged="@{(edtitable)->mainactivity.afterUserNameChange(edtitable)}"
+        />
+
 </LinearLayout>
 </layout>
